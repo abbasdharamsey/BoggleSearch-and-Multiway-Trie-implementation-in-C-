@@ -1,6 +1,15 @@
 PA4: Boggle
 
-Checkpoint: Friday Dec. 5th,  11 PM
-Due:        Friday Dec. 12th, 11 PM
+This was final assignment in a Data Structures course at UCSD. We had to implement a data structure that would allow for fast insert and lookup of a dictionary, so we chose a Multiway Trie. 
 
-Read the assignment description thoroughly before starting!
+The purpose of the project was to set up the backend for a version of Boggle. What we did was set up the data structure for the dictionary, as well as implement the algorithm to find all valid words on the board, and to check if a users word that was on the board was a valid word. 
+
+The code for the MWTrie in boggleutil.h, boggleutil.cpp.
+
+The code for the Algorithms can be found in boggleplayer.cpp and boggleplayer.h
+
+In boggleplayer.cpp:
+
+getAllValidWords and findAllWords are used in sync to go through the entire board and find all valid words (i.e. words that are in the dictionary) that you can get to by the rules of boggle. 
+
+isOnBoard and findWord are used in sync to look up if a word that the user has inputed on the board, as well as being a valid word. 
